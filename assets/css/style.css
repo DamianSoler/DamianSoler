@@ -1,0 +1,51 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    color: white;
+    background-color: #303030;
+}
+
+.logomobile{
+    margin-left: 1rem;
+    color: #5CD6C8;
+}
+
+.nav-link:hover{
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.nav-link{
+    color:  white;
+    text-decoration: none;
+    font-size: larger;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.animato:hover{
+        animation: tada; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s; /* don't forget to set a duration! */
+        color: #5CD6C8;
+}
+
+.trabajos{
+    margin-top: 8rem;
+}
+
+model-viewer{
+    min-width: 500px;
+    min-height: 500px;
+}
+
+
+.parrafos{
+    color: whitesmoke;
+    max-width: 25rem;
+}
+
+.contacto{
+    margin-top: 5rem;
+}
