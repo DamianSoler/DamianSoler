@@ -3,22 +3,30 @@
 }
 
 body{
-    color: white;
+    color: #89FFA0;
     background-color: #303030;
+}
+
+.bgoscuro{
+    background-color: #202020;
+}
+
+.bgoscurisimo{
+    background-color: #101010;
 }
 
 .logomobile{
     margin-left: 1rem;
-    color: #5CD6C8;
 }
 
 .nav-link:hover{
     animation: pulse; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s; /* don't forget to set a duration! */
+    color: #89FFA0;
 }
 
 .nav-link{
-    color:  white;
+    color:  #89FFA0;
     text-decoration: none;
     font-size: larger;
     margin-left: 1rem;
@@ -28,11 +36,12 @@ body{
 .animato:hover{
         animation: tada; /* referring directly to the animation's @keyframe declaration */
         animation-duration: 1s; /* don't forget to set a duration! */
-        color: #5CD6C8;
+        color: #89FFA0;
 }
 
 .trabajos{
-    margin-top: 8rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
 model-viewer{
@@ -40,9 +49,17 @@ model-viewer{
     min-height: 500px;
 }
 
+.docutec{
+    width: 500px;
+}
 
 .parrafos{
-    color: whitesmoke;
+    color: #89FFA0;
+    max-width: 25rem;
+}
+
+.Titulos{
+    color: #89FFA0;
     max-width: 25rem;
 }
 
