@@ -1,146 +1,193 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="DamianSoler">
-    <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" sizes="any">
-    <title>DamianSoler</title>
-    <!--recursos externos-->
-        <!--bootstrap-->
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <!--Google Fonts-->
-            <link rel="preconnect" href="https://fonts.gstatic.com">
-            <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap" rel="stylesheet">
-        <!--FontAwesome-->
-            <script src="https://kit.fontawesome.com/5fc40070ad.js" crossorigin="anonymous"></script>    
-        <!--Animaciones CSS-->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!--Css Propio-->
-        <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="DamianSoler">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" sizes="any">
+  <title>DamianSoler</title>
+  <!--recursos externos-->
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap" rel="stylesheet">
+  <!--FontAwesome-->
+  <script src="https://kit.fontawesome.com/5fc40070ad.js" crossorigin="anonymous"></script>
+  <!--Animaciones CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--Css Propio-->
+  <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+
 <body>
-<!--NavBar-->
-<nav class="navbar navbar-expand-lg bgoscuro fixed-top shadow-lg">
+  <!--NavBar-->
+  <nav class="navbar navbar-expand-lg bgoscuro fixed-top shadow-lg">
 
-      <a class="navbar-brand d-lg-none logomobile" href="#"><img src="assets/img/logo.svg" class="animato" width="60" height="60" alt="LogoDS"></a>
-    
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo01">
-    
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Servicios</a>
-          </li>
-          <li class="nav-item">
-        </ul>
-        
-        <a class="navbar-brand d-none d-lg-block" href="#"><img class="animato" src="assets/img/logo.svg" width="60" height="60" alt="LogoDS"></a>
-        
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <a class="navbar-brand d-lg-none logomobile" href="#"><img src="assets/img/logo.svg" class="animato" width="60"
+        height="60" alt="LogoDS"></a>
 
-<!--Trabajos-->
-  <!--Modelos en 3D-->
-    <div class="container-lg trabajos border-danger">
-        <div class="row">
-            <div class="col">
-               
-                <model-viewer src="assets/models/Logo3d.glb" camera-controls  camera-controls camera-orbit="-33.38deg 37.19deg 12.07m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 12.07m" auto-rotate ios-src="assets/models/Logo3d.usdz" poster="assets/img/poster.png" shadow-intensity="3">
-                  <button class="Hotspot" slot="hotspot-1" data-position="3.912762324434824m 1.0410142473869135m -0.7477165482731909m" data-normal="5.551115123125783e-17m 0.9396926120304918m 0.34202016738097707m" data-visibility-attribute="visible">
-                    <div class="HotspotAnnotation">Tu producto en 3D</div>
-                </button>
-                    <div class="progress-bar hide" slot="progress-bar">
-                        <div class="update-bar"></div>
-                    </div>
-                    <button slot="ar-button" id="ar-button">
-                        Ver en Realidad Virtual
-                    </button>
-                </model-viewer>
-            </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <div class="col my-auto">
-                <h2 class="titulos">Presenta de manera interactiva</h1>
-                <p class="parrafos">Puedo modelar en 3D tus productos e incorporarlos a tu web para que tus clientes puedan interactuar con ellos e incluso verlos en realidad virtual en su celular!</p>
-                <p class="parrafos">Podran verlos desde distintos angulos, ver como se verian de otro color y hasta poder proyectarlos en el lugar donde los necesitan para hacerse una idea de como quedara</p>
-            </div>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo01">
 
-        </div>  
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Servicios</a>
+        </li>
+        <li class="nav-item">
+      </ul>
+
+      <a class="navbar-brand d-none d-lg-block" href="#"><img class="animato" src="assets/img/logo.svg" width="60"
+          height="60" alt="LogoDS"></a>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+
+  <!--Servicios-->
+
+  <!--Modelos en 3D-->
+  <div class="container-lg servicios border-danger">
+    <div class="row my-4">
+      <div class="col mx-auto">
+
+        <model-viewer class="float-end" src="assets/models/Logo3d.glb" camera-controls camera-controls
+          camera-orbit="-33.38deg 37.19deg 12.07m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 12.07m"
+          auto-rotate ios-src="assets/models/Logo3d.usdz" poster="assets/img/poster.png" shadow-intensity="3">
+          <button class="Hotspot" slot="hotspot-1"
+            data-position="3.912762324434824m 1.0410142473869135m -0.7477165482731909m"
+            data-normal="5.551115123125783e-17m 0.9396926120304918m 0.34202016738097707m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Tu producto en 3D</div>
+          </button>
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
+          <button slot="ar-button" id="ar-button">
+            Ver en Realidad Virtual
+          </button>
+        </model-viewer>
+      </div>
+
+      <div class="col my-auto mx-auto">
+        <h2 class="titulos">Presenta de manera <strong>interactiva</strong></h1>
+          <p class="parrafos">Puedo <strong>modelar en 3D tus productos</strong> e incorporarlos a tu web para que tus clientes puedan
+            interactuar con ellos e incluso verlos en realidad virtual en su celular!</p>
+          <p class="parrafos">Podran verlos desde distintos angulos, ver como se verian de otro color y hasta poder
+            proyectarlos en el lugar donde los necesitan para hacerse una idea de como quedara</p>
+      </div>
+      <hr class="divisor">
+    </div>
+  </div>
+
   <!--Documentacion tecnica-->
-  <div class="container-lg trabajos border-danger">
-    <div class="row">
+  <div class="container-lg servicios my-2">
+    <div class="row mt-5">
 
-        <div class="col my-auto mx-auto text-end">
-            <h2 class="titulos">Ten la documentacion tecnica de tus proyectos</h1>
-            <p class="parrafos">Ten todo documentado como dios manda, evita los problemas de comunicacion con tus proveedores o tu propio taller teniendo planos y documentos tecnicos claros</p>
-            <p class="parrafos">estandariza tus documentos con las normativas necesarias y aplica la identidad corporativa para que tud documentos sean serios y profesionales, sin margen de error y parte clave de tu servicio</p>
-        </div>
+      <div class="col my-auto mx-auto">
+        <h2 class="titulos text-end">Documentacion técnica de tus proyectos</h1>
+          <p class="text-end float-end parrafos"><strong>Planos de fabricacion, Layouts, Asbuilt, Diagramas de flujo (P&ID) vistas
+            isometricas.</strong> Ten todo documentado como dios manda, teniendo planos y documentos técnicos claros.</p>
+          <p class="text-end float-end parrafos">Estandariza tus documentos con las normativas necesarias y aplica la
+            identidad corporativa para que tus documentos sean serios y profesionales, <strong>sin margen de error</strong> y parte clave
+            de tu servicio, evita los problemas de comunicacion con tus proveedores o tu propio taller.</p>
+      </div>
 
-        <div class="col">
-          <img src="assets/img/Docutec.gif" alt="description of gif" class="docutec">
-        </div>
+      <div class="col mx-auto my-auto">
+        <img src="assets/img/Docutec.gif" alt="Plano animado" class="docutec">
+      </div>
+      <hr class="divisor2">
+    </div>
+  </div>
 
-    </div>  
-</div>
+  <!--FrontEnd-->
+  <div class="container-lg servicios border-danger">
+    <div class="row my-4">
+      <div class="col my-auto mx-auto">
+        <img src="assets/img/fontend.jpg" alt="frontend" class="docutec float-end my-auto">
+      </div>
 
-<!--Contacto-->
+      <div class="col my-auto mx-auto">
+        <h2 class="titulos">Tu presencia Digital</h1>
+          <p class="parrafos">Los nuevos negocios <strong>se hacen en linea</strong>, puedo levantar tu pagina web <strong>tal cual como la que estas viendo ahora mismo</strong></p>
+          <p class="parrafos">Tambien puedo preocuparme de las redes sociales de tu negocio, haciendo piezas graficas acorde a tu identidad</p>
+      </div>
+      <hr class="divisor">
+    </div>
+  </div>
 
-<div class="typeform-widget mx-auto contacto" data-url="https://form.typeform.com/to/p4v38sU3?typeform-medium=embed-snippet" data-hide-headers="true" data-hide-footer="true" style="width: 100%; height: 700px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+  <!--Contacto-->
+
+  <div class="typeform-widget mx-auto contacto"
+    data-url="https://form.typeform.com/to/p4v38sU3?typeform-medium=embed-snippet" data-hide-headers="true"
+    data-hide-footer="true" style="width: 100%; height: 700px;"></div>
+  <script>
+    (function () {
+      var qs, js, q, s, d = document,
+        gi = d.getElementById,
+        ce = d.createElement,
+        gt = d.getElementsByTagName,
+        id = "typef_orm",
+        b = "https://embed.typeform.com/";
+      if (!gi.call(d, id)) {
+        js = ce.call(d, "script");
+        js.id = id;
+        js.src = b + "embed.js";
+        q = gt.call(d, "script")[0];
+        q.parentNode.insertBefore(js, q)
+      }
+    })()
+  </script>
 
 
 
 
-<!--Footer-->
+  <!--Footer-->
 
-    <footer class="bgoscuro text-center text-white fixed-bottom shadow-lg">
+  <footer class="bgoscuro text-center text-white fixed-bottom shadow-lg">
     <div class="container p-4 pb-0">
       <section class="mb-4">
         <!-- Facebook -->
-        <a class="btn btn-outline-light rounded-circle btn-floating m-1" href="https://www.facebook.com/DamiansolerD/" role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-  
+        <a class="btn btn-outline-light rounded-circle btn-floating m-1" href="https://www.facebook.com/DamiansolerD/"
+          role="button"><i class="fab fa-facebook-f"></i></a>
+
         <!-- Twitter -->
-        <a class="btn btn-outline-light rounded-circle btn-floating m-1" href="https://twitter.com/DamianSolerD" role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
-  
+        <a class="btn btn-outline-light rounded-circle btn-floating m-1" href="https://twitter.com/DamianSolerD"
+          role="button"><i class="fab fa-twitter"></i></a>
+
         <!-- Google -->
-        <a class="btn btn-outline-light rounded-circle btn-floating m-1" href="https://www.behance.net/DamianSoler" role="button"
-          ><i class="fab fa-behance"></i
-        ></a>
-  
+        <a class="btn btn-outline-light rounded-circle btn-floating m-1" href="https://www.behance.net/DamianSoler"
+          role="button"><i class="fab fa-behance"></i></a>
+
         <!-- Instagram -->
-        <a class="btn btn-outline-light rounded-circle btn-floating m-1" href="https://www.instagram.com/di.damiansoler/" role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-  
+        <a class="btn btn-outline-light rounded-circle btn-floating m-1"
+          href="https://www.instagram.com/di.damiansoler/" role="button"><i class="fab fa-instagram"></i></a>
+
         <!-- Linkedin -->
-        <a class="btn btn-outline-light rounded-circle btn-floating m-1" href="https://www.linkedin.com/in/damiansoler/" role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-  
+        <a class="btn btn-outline-light rounded-circle btn-floating m-1" href="https://www.linkedin.com/in/damiansoler/"
+          role="button"><i class="fab fa-linkedin-in"></i></a>
+
         <!-- Github -->
-        <a class="btn btn-outline-light rounded-circle btn-floating m-1" href="https://github.com/DamianSoler" role="button"
-          ><i class="fab fa-github"></i
-        ></a>
+        <a class="btn btn-outline-light rounded-circle btn-floating m-1" href="https://github.com/DamianSoler"
+          role="button"><i class="fab fa-github"></i></a>
       </section>
     </div>
 
@@ -149,9 +196,12 @@
     </div>
   </footer>
 
-<!--Bootstrap-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-<!--Google Model Viewer-->
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+  <!--Google Model Viewer-->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </body>
+
 </html>

@@ -39,7 +39,7 @@ body{
         color: #89FFA0;
 }
 
-.trabajos{
+.servicios{
     margin-top: 6rem;
     margin-bottom: 6rem;
 }
@@ -49,20 +49,38 @@ model-viewer{
     min-height: 500px;
 }
 
-.docutec{
-    width: 500px;
-}
-
 .parrafos{
     color: #89FFA0;
-    max-width: 25rem;
+    max-width: 30rem;
 }
 
 .Titulos{
     color: #89FFA0;
     max-width: 25rem;
+    text-shadow: 4px 4px 10px #89FFA0;
+}
+
+h2{
+    margin-bottom: 2rem;
+    text-shadow: 4px 4px 10px #89FFA0;
 }
 
 .contacto{
     margin-top: 5rem;
+}
+
+.divisor{
+    margin-top: 4rem;
+}
+
+.divisor2{
+    margin-top: 8rem;
+}
+
+.col{
+    margin-bottom: 4rem;
+}
+
+.docutec{
+    max-width: 500px;
 }
