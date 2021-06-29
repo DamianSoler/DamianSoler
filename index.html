@@ -15,7 +15,10 @@
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap" rel="stylesheet">
-  <!--FontAwesome-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+  !--FontAwesome-->
   <script src="https://kit.fontawesome.com/5fc40070ad.js" crossorigin="anonymous"></script>
   <!--Animaciones CSS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -31,8 +34,9 @@
     <a class="navbar-brand d-lg-none logomobile" href="#"><img src="assets/img/logo.svg" class="animato" width="60"
         height="60" alt="LogoDS"></a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -40,10 +44,10 @@
 
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Inicio</a>
+          <a class="nav-link" href="#servicios">Servicios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Servicios</a>
+          <a class="nav-link" href="#carouselExampleCaptions">Trabajos</a>
         </li>
         <li class="nav-item">
       </ul>
@@ -53,10 +57,10 @@
 
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#aboutme">Acerca de mi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
         </li>
       </ul>
     </div>
@@ -65,8 +69,10 @@
   <!--Servicios-->
 
   <!--Modelos en 3D-->
-  <div class="container-lg servicios border-danger">
-    <div class="row my-4">
+
+  <div class="container-fluid bgverde servicios" id="servicios">
+    <div class="container px-5">
+    <div class="row mt-0">
       <div class="col mx-auto">
 
         <model-viewer class="float-end" src="assets/models/Logo3d.glb" camera-controls camera-controls
@@ -88,115 +94,124 @@
       </div>
 
       <div class="col my-auto mx-auto">
-        <h2 class="titulos">Presenta de manera <strong>interactiva</strong></h1>
+        <h2 class="titulooscuro">Presenta de manera <strong>interactiva</strong></h1>
           <p class="parrafos">Puedo <strong>modelar en 3D tus productos</strong> e incorporarlos a tu web para que tus
             clientes puedan
             interactuar con ellos e incluso verlos en realidad virtual en su celular!</p>
           <p class="parrafos">Podran verlos desde distintos angulos, ver como se verian de otro color y hasta poder
             proyectarlos en el lugar donde los necesitan para hacerse una idea de como quedara</p>
       </div>
-      <hr class="divisor">
     </div>
+  </div>
   </div>
 
   <!--Documentacion tecnica-->
-  <div class="container-lg servicios my-2">
-    <div class="row mt-5">
+  <div class="container-fluid servicios my-2 bgoscurito">
+    <div class="container p-2">
+    <div class="row p-5 my-auto mx-auto">
 
       <div class="col my-auto mx-auto">
-        <h2 class="titulos text-end">Documentacion técnica de tus proyectos</h1>
-          <p class="text-end float-end parrafos"><strong>Planos de fabricacion, Layouts, Asbuilt, Diagramas de flujo
+        <h2 class="text-end tituloverde">Documentacion técnica</h1>
+          <p class="text-end float-end parrafos docup"><strong>Planos de fabricacion, Layouts, Asbuilt, Diagramas de
+              flujo
               (P&ID) vistas
-              isometricas.</strong> Ten todo documentado como dios manda, teniendo planos y documentos técnicos claros.
+              isometricas.</strong>
           </p>
-          <p class="text-end float-end parrafos">Estandariza tus documentos con las normativas necesarias y aplica la
-            identidad corporativa para que tus documentos sean serios y profesionales, <strong>sin margen de
-              error</strong> y parte clave
-            de tu servicio, evita los problemas de comunicacion con tus proveedores o tu propio taller.</p>
+          <p class="text-end float-end parrafos docup">Ten todo documentado como dios manda, teniendo planos y documentos técnicos claros.<strong>sin margen de
+              error</strong> evita los problemas de comunicacion con tus proveedores o tu propio taller.</p>
       </div>
 
       <div class="col mx-auto my-auto">
-        <img src="assets/img/Docutec.gif" alt="Plano animado" class="docutec">
+        <img src="assets/img/Docutec.gif" alt="Plano animado" class="docutec rounded-3">
       </div>
-      <hr class="divisor2">
     </div>
   </div>
+</div>
 
   <!--FrontEnd-->
-  <div class="container-lg servicios border-danger">
-    <div class="row my-4">
+  <div class="container-fluid mt-2 bgverde">
+    <div class="container p-5">
+    <div class="row my-4-auto mx-auto">
       <div class="col my-auto mx-auto">
-        <img src="assets/img/fontend.jpg" alt="frontend" class="docutec float-end my-auto">
+        <img src="assets/img/fontend.jpg" alt="frontend" class="docutec float-end my-auto rounded-3">
       </div>
 
       <div class="col my-auto mx-auto">
-        <h2 class="titulos">Tu presencia Digital</h1>
+        <h2 class="titulooscuro">Tu presencia Digital</h1>
           <p class="parrafos">Los nuevos negocios <strong>se hacen en linea</strong>, puedo levantar tu pagina web
             <strong>tal cual como la que estas viendo ahora mismo</strong></p>
           <p class="parrafos">Tambien puedo preocuparme de las redes sociales de tu negocio, haciendo piezas graficas
             acorde a tu identidad</p>
       </div>
-      <hr class="divisor">
     </div>
+  </div>
   </div>
 
   <!--Carrousel-->
 
+<div class="container-fluid bgoscurito my-0">
   <div id="carouselExampleCaptions" class="container carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+        aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+        aria-label="Slide 7"></button>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner my-5">
       <div class="carousel-item active">
-        <img src="assets/img/Renders/Carrousel04.gif" class="mx-auto d-block w-60 rounded-3" alt="hexagonos">
+        <img src="assets/img/Renders/Carrousel04.gif" class="mx-auto d-block w-60 rounded-3 renders" alt="hexagonos">
         <div class="carousel-caption d-none d-md-block">
           <h5>Hexagonos</h5>
           <p>Animacion conceptual en loop de hexagonos </p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="assets/img/Renders/Carrusel01.png" class="mx-auto d-block w-60 rounded-3" alt="Nudo">
+        <img src="assets/img/Renders/Carrusel01.png" class="mx-auto d-block w-60 rounded-3 renders" alt="Nudo">
         <div class="carousel-caption d-none d-md-block">
           <h5>Nudo cromatico</h5>
           <p>Render conceptual de un nudo colorido</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="assets/img/Renders/Carrousel05.gif" class="mx-auto d-block w-60 rounded-3" alt="Nudo animado">
+        <img src="assets/img/Renders/Carrousel05.gif" class="mx-auto d-block w-60 rounded-3 renders" alt="Nudo animado">
         <div class="carousel-caption d-none d-md-block">
           <h5>Nudo animado</h5>
           <p>Render conceptual animado en loop de un nudo</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="assets/img/Renders/Carrusel02.png" class="mx-auto d-block w-60 rounded-3" alt="Vasija">
+        <img src="assets/img/Renders/Carrusel02.png" class="mx-auto d-block w-60 rounded-3 renders" alt="Vasija">
         <div class="carousel-caption d-none d-md-block">
           <h5>Render Vasija</h5>
           <p>Render de una vasija de vidrio tintado</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="assets/img/Renders/Carrousel06.gif" class="mx-auto d-block w-60 rounded-3" alt="Pintura">
+        <img src="assets/img/Renders/Carrousel06.gif" class="mx-auto d-block w-60 rounded-3 renders" alt="Pintura">
         <div class="carousel-caption d-none d-md-block">
           <h5>Pintura</h5>
           <p>Render conceptual de pintura flotando en el aire</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="assets/img/Renders/Carrusel03.png" class="mx-auto d-block w-60 rounded-3" alt="Microrender">
+        <img src="assets/img/Renders/Carrusel03.png" class="mx-auto d-block w-60 rounded-3 renders" alt="Microrender">
         <div class="carousel-caption d-none d-md-block">
           <h5>Microrender</h5>
           <p>Render conceptual con un enfoque de efecto microscopico</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="assets/img/Renders/Caverna.png" class="mx-auto d-block w-60 rounded-3" alt="Desgaste">
+        <img src="assets/img/Renders/Caverna.png" class="mx-auto d-block w-60 rounded-3 renders" alt="Desgaste">
         <div class="carousel-caption d-none d-md-block">
           <h5>Desgastado</h5>
           <p>Render conceptual de una esfera desgastada</p>
@@ -212,10 +227,64 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+</div>
+
+  <!--About me-->
+
+  <div class="container-fluid aboutme">
+    <div class="row">
+    <h2 class="titulooscuro text-center p-3 mb-0 mt-4"><strong>Acerca de  </strong><span class="cursivo ps-1 pe-3 badge bgoscurito">Damian</span></h1>
+    </div>
+    <div class="container">
+    <div class="row">
+
+      <div class="col-sm my-2">
+        <div class="card mx-auto my-3 border-secondary" style="width: 18rem;">
+          <img src="assets/img/Aboutme/Logoduoc.png" class="card-img-top p-4" alt="DuocUC">
+          <div class="card-body">
+            <h5 class="card-title">Diseño Industrial</h5>
+            <p class="card-text">Diseño de productos y servicios, documentacion tecnica y tecnicas basicas de renderizado y presentacion de productos. nociones de marketing</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm my-2">
+        <div class="card mx-auto my-3 border-secondary" style="width: 18rem;">
+          <img src="assets/img/Aboutme/Logoduoc.png" class="card-img-top p-4" alt="DuocUC">
+          <div class="card-body">
+            <h5 class="card-title">Diplomado: Estrategias de innovacion</h5>
+            <p class="card-text">Diseño de productos y servicios, enfocado en la solucion a un problema real, aplicando diferentes estrategias de investigacion de usuario</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm my-2">
+        <div class="card mx-auto my-3 border-secondary" style="width: 18rem;">
+          <img src="assets/img/Aboutme/scrum.jpg" class="card-img-top p-4" alt="scrum">
+          <div class="card-body">
+            <h5 class="card-title">Certificacion: SCRUM Master</h5>
+            <p class="card-text">Certificacion de Rol de Scrum, Framework de trabajo en entornos cambiantes</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm my-2">
+        <div class="card mx-auto my-3 border-secondary" style="width: 18rem;">
+          <img src="assets/img/Aboutme/desafio.png" class="card-img-top p-4" alt="Desafio Latam">
+          <div class="card-body">
+            <h5 class="card-title">Diseño UX/UI</h5>
+            <p class="card-text">Diseño de experiencia e interfaz de usuario, con conocimientos basicos de frontend (HTML,CSS y Javascript)</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
 
   <!--Contacto-->
 
-  <div class="typeform-widget mx-auto contacto"
+  <div class="typeform-widget mt-0 contacto" id="contacto"
     data-url="https://form.typeform.com/to/p4v38sU3?typeform-medium=embed-snippet" data-hide-headers="true"
     data-hide-footer="true" style="width: 100%; height: 700px;"></div>
   <script>
@@ -268,7 +337,7 @@
     </div>
 
     <div class="text-center p-3 bgoscurisimo">
-      Damian Liam Soler Diaz
+      Damian Liam Soler Diaz - Diseñador
     </div>
   </footer>
 

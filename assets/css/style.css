@@ -7,7 +7,28 @@ body{
     background-color: #303030;
 }
 
+.custom-toggler.navbar-toggler {
+    border-color: #89FFA0;
+    margin-right: 2remRe;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.bgverde{
+    color: #303030;
+    background-color: #89FFA0;
+}
+
+.bgoscurito{
+    color: #89FFA0;
+    background-color: #303030;
+}
+
 .bgoscuro{
+    color: #89FFA0;
     background-color: #202020;
 }
 
@@ -40,8 +61,7 @@ body{
 }
 
 .servicios{
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 4rem;
 }
 
 model-viewer{
@@ -50,23 +70,40 @@ model-viewer{
 }
 
 .parrafos{
-    color: #89FFA0;
-    max-width: 30rem;
+    color: #303030;
 }
 
-.Titulos{
-    color: #89FFA0;
-    max-width: 25rem;
-    text-shadow: 4px 4px 10px #89FFA0;
-}
-
-h2{
+.tituloblanco{
+    color: aliceblue;
     margin-bottom: 2rem;
-    text-shadow: 4px 4px 10px #89FFA0;
+    text-shadow: 2px 2px 6px #89FFA0;
+}
+
+.titulooscuro{
+    color: #303030;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 6px #808080;
+}
+
+.tituloverde{
+    color: #89FFA0;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 6px #89FFA0;
+}
+
+
+.w1{
+    min-width: 600px;
+}
+.docup{
+    color: #89FFA0;
+    margin-bottom: 2rem;
 }
 
 .contacto{
     margin-top: 5rem;
+    margin-bottom: 9rem;
+    max-height: 30rem;
 }
 
 .divisor{
@@ -83,4 +120,29 @@ h2{
 
 .docutec{
     max-width: 500px;
+}
+
+.aboutme{
+    background-image: linear-gradient(90deg, #303030, #89FFA0, #303030);
+    color: #202020;
+}
+
+.renders{
+    max-width: 700px;
+}
+
+.cursivo{
+    font-family: 'Yellowtail', cursive;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.Marvel{
+    font-family: 'Marvel', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.card-title{
+    font-weight: 800;
 }
