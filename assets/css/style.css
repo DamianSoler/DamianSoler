@@ -3,12 +3,12 @@
 }
 
 body{
-    color: #89FFA0;
-    background-color: #303030;
+    color: #93949c;
+    background-color: #363636;
 }
 
 .custom-toggler.navbar-toggler {
-    border-color: #89FFA0;
+    border-color: #93949c;
     margin-right: 2remRe;
 }
 
@@ -18,18 +18,18 @@ body{
 }
 
 .bgverde{
-    color: #303030;
-    background-color: #89FFA0;
+    color: #363636;
+    background-color: #93949c;
 }
 
 .bgoscurito{
-    color: #89FFA0;
-    background-color: #303030;
+    color: #93949c;
+    background-color: #363636;
 }
 
 .bgoscuro{
-    color: #89FFA0;
-    background-color: #202020;
+    color: #93949c;
+    background-color: #363636;
 }
 
 .bgoscurisimo{
@@ -43,11 +43,11 @@ body{
 .nav-link:hover{
     animation: pulse; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s; /* don't forget to set a duration! */
-    color: #89FFA0;
+    color: #93949c;
 }
 
 .nav-link{
-    color:  #89FFA0;
+    color:  #93949c;
     text-decoration: none;
     font-size: larger;
     margin-left: 1rem;
@@ -57,11 +57,20 @@ body{
 .animato:hover{
         animation: tada; /* referring directly to the animation's @keyframe declaration */
         animation-duration: 1s; /* don't forget to set a duration! */
-        color: #89FFA0;
+        color: #93949c;
+}
+
+.divhero{
+    margin-top: 80px;
+    padding: 0%;
+}
+
+.hero{
+    width: 100%;
 }
 
 .servicios{
-    margin-top: 4rem;
+    margin-top: 0.1rem;
 }
 
 model-viewer{
@@ -76,19 +85,19 @@ model-viewer{
 .tituloblanco{
     color: aliceblue;
     margin-bottom: 2rem;
-    text-shadow: 2px 2px 6px #89FFA0;
+    text-shadow: 2px 2px 6px #93949c;
 }
 
 .titulooscuro{
     color: #303030;
     margin-bottom: 2rem;
-    text-shadow: 2px 2px 6px #808080;
+    text-shadow: 2px 2px 6px #93949c;
 }
 
 .tituloverde{
-    color: #89FFA0;
+    color: #93949c;
     margin-bottom: 2rem;
-    text-shadow: 2px 2px 6px #89FFA0;
+    text-shadow: 2px 2px 6px #93949c;
 }
 
 
@@ -96,7 +105,7 @@ model-viewer{
     min-width: 600px;
 }
 .docup{
-    color: #89FFA0;
+    color: #93949c;
     margin-bottom: 2rem;
 }
 
@@ -123,7 +132,7 @@ model-viewer{
 }
 
 .aboutme{
-    background-image: linear-gradient(90deg, #303030, #89FFA0, #303030);
+    background-image: linear-gradient(90deg, #363636, #93949c, #363636);
     color: #202020;
 }
 
